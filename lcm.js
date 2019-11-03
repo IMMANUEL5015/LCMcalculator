@@ -10,12 +10,12 @@ var refresh = document.querySelectorAll("button")[1];
 submit.addEventListener("click", function(){
    var lcmResult =  lcmOfTwoNums(firstNum.value, secondNum.value);
    result.value = lcmResult;
-   firstNum.value = null;
-   secondNum.value = null
 })
 //Refresh the calculator
 refresh.addEventListener("click", function(){
-    result.value = null
+    firstNum.value = null;
+    secondNum.value = null;
+    result.value = null;
  })
 
 //Declaring but not calling the function that calculates the LCM OF TWO Numbers
