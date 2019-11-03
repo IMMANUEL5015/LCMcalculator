@@ -25,6 +25,7 @@ function lcmOfTwoNums(num1, num2){
     var result = 1;//this is the result that will be returned at the end of the calculation
     if(num1 == 0 || num2 == 0){
         result = 0;
+        return result; //lcm of 0 and any number is 0
     }
     //select the larger number
     var num3;
