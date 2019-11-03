@@ -10,13 +10,13 @@ var refresh = document.querySelectorAll("button")[1];
 submit.addEventListener("click", function(){
    var lcmResult =  lcmOfTwoNums(firstNum.value, secondNum.value);
    result.value = lcmResult;
-})
+});
 //Refresh the calculator
 refresh.addEventListener("click", function(){
     firstNum.value = null;
     secondNum.value = null;
     result.value = null;
- })
+ });
 
 //Declaring but not calling the function that calculates the LCM OF TWO Numbers
 function lcmOfTwoNums(num1, num2){
